@@ -92,7 +92,7 @@
 </style>
 </head>
 <body>
-<!--<div id="centro">
+<div id="centro">
     <img src="WhatsApp Image 2026-08-01 at 11.52.22 AM.jpeg" alt="Centro">
 </div>
 
@@ -168,7 +168,7 @@ function makeCenterTextTexture(msg){
   ctx.fillText(msg,c.width/2,c.height/2);
   return new THREE.CanvasTexture(c);
 }
-const centerTex = loader.load("WhatsApp Image 2026-08-01 at 11.52.22 AM.jpeg");
+const centerTex=makeCenterTextTexture("");
 const centerMat=new THREE.SpriteMaterial({map:centerTex,transparent:true});
 const centerSprite=new THREE.Sprite(centerMat);
 centerSprite.scale.set(60,60,1);
